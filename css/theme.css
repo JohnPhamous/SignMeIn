@@ -64,6 +64,7 @@ input {
     user-drag: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
+    background-blend-mode: multiply;
 }
 .logo-small {
     height: auto;
@@ -87,7 +88,7 @@ input {
 /*Extra Goodies*/
 #header {
     position: fixed;
-    top: 0;
+    top: 5%;
     width: 100%;
 }
 #footer {
