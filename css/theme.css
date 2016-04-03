@@ -68,13 +68,22 @@ input {
 .logo-small {
     height: auto;
     width: auto;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 50%;
+    max-height: 50%;
     user-drag: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
 }
 
+/*Extra Goodies*/
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 #centered-goodies {
-    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
