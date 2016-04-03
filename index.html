@@ -11,37 +11,23 @@
     <meta name="HandheldFriendly" content="true">
 </head>
 <body>
-    <script>
-        var x = document.getElementById("current-location");
-
-        function getLocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(showPosition);
-            } else {
-                x.innerHTML = "Geolocation is not supported by this browser.";
-            }
-        }
-
-        function showPosition(position) {
-            x.innerHTML = "Latitude: " + position.coords.latitude +
-            "<br>Longitude: " + position.coords.longitude;
-            var longi = position.coords.longitude;
-            var lati = position.coords.latitude;
-
-        }
-    </script>
     <div id="header"><center>Made with <i class="twa twa-heart"></i></center></div>
     <div id="centered-goodies">
         <center><img class="logo" src="img/logo.png">
-        <form class="form-inline">
             <div class="form-group">
                 <br>
                 <input type="text" class="form-control" id="eventid" placeholder="Event ID"><br>
-                <a href="successful.html" class="btn btn-default">Sign Me In</a>
+                <button onclick="getLocation()" class="btn btn-default">Sign Me In</button>
                 <!--<button type="submit" class="btn btn-default modal-content">Sign Me In</button>-->
             </div>
-        </form></center>
+            <!--Invisible Goodies-->
+            <div class="form-group" id="invisible">
+                <input type="text" class="form-control" id="longi-signin"><br>
+                <input type="text" class="form-control" id="lati-signin"><br>
+            </div>
+        </center>
     </div>
+
     <div class="btn-group" id="footer">
         <center><a href="login.html" class="btn btn-default">Account Login</a>
         <a href="about.html" class="btn btn-default">About SignMeIn</a></center>
@@ -49,5 +35,23 @@
     <div id="version">
         0.0.1 &copy; SignMeIn 2016
     </div>
+    <script>
+        var x = document.getElementById("longi-signin");
+        var y = document.getElementById("lati-signin");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                y.value = "Your browser does not support location services.";
+            }
+        }
+        function showPosition(position) {
+            var longi = position.coords.longitude;
+            var lati = position.coords.latitude;
+            x.value = (position.coords.longitude).toFixed(2);
+            y.value = (position.coords.latitude).toFixed(2);
+        }
+    </script>
 </body>
 </html>

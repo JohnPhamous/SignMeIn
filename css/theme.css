@@ -121,3 +121,6 @@ input {
 	z-index: 99999;
 	background: #FFF url(../img/loader.gif) center center no-repeat;
 }
+#invisible {
+    visibility: hidden;
+}
