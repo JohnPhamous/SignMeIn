@@ -74,8 +74,22 @@ input {
     -moz-user-select: none;
     -webkit-user-drag: none;
 }
+.logo-extra-small {
+    height: auto;
+    width: auto;
+    max-width: 10%;
+    max-height: 10%;
+    user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+}
 
 /*Extra Goodies*/
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 #footer {
     position: fixed;
     bottom: 0;
