@@ -69,8 +69,8 @@ input {
 .logo-small {
     height: auto;
     width: auto;
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 150px;
+    max-height: 150px;
     user-drag: none;
     -moz-user-select: none;
     -webkit-user-drag: none;

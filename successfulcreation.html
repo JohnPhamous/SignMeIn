@@ -1,12 +1,11 @@
 <html>
 <title>
-    Sucess!
+    Successful Creation!
 </title>
 <head>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/custom.min.css">
     <link rel="stylesheet" type="text/css" href="css/theme.css">
-    <link rel="stylesheet" type="text/css" href="css/twemoji-awesome.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="HandheldFriendly" content="true">
 
@@ -14,17 +13,28 @@
 
 </head>
 <body>
-    <div class="page-loader"></div>
+    <!--<div class="page-loader"></div>-->
     <div id="centered-goodies">
-        <center><img class="logo-small" src="img/logo.png">
-            <h3>Sucessful Sign In!</h3>
-            <i class="twa twa-5x twa-ok-hand"></i>
+        <center><img class="logo-small" src="img/logo.png"><br><br>
+            <div class="modal-content">
+              <div class="modal-header">
+                <center><h4 class="modal-title">Event Created!</h4></center>
+              </div>
+              <div class="modal-body">
+                <center><justify><p>Your event has been created. It's time to share the Event ID!</p></justify></center>
+              </div>
+              <div class="modal-footer">
+                <center><a type="button" class="btn btn-primary" href="display.html">Share Event ID</a>
+                </center>
+              </div>
+            </div>
         </center>
     </div>
     <div class="btn-group" id="footer">
-        <center><a href="index.html" class="btn btn-default">Back</a>
+        <center>
         <a href="index.html" class="btn btn-default">Home</a></center>
     </div>
+
     <script>
         var x = Math.floor(Math.random() * 5000) + 200
         console.log(x);
