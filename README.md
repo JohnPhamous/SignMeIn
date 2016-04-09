@@ -1,6 +1,5 @@
 # SignMeIn
 ======================
-SignMeIn.Online 
 
 Coded in Javascript, HTML
 
